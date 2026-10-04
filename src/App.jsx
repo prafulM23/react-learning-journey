@@ -1,26 +1,40 @@
-function App() {
-  const name = "Praful";
-  const age = 22;
+const Header = () => {
+  return (
+    <h1>Welcome to React journey</h1>
+  )
+}
+
+const Profile = () => {
+  const name = "Praful"
+  const age = 23;
   const live = "Indore";
-  const first = 10;
-  const sec = 20;
 
   return (
     <>
-      <div>
-        <h1>Hello, I am {name}</h1>
-        <p>My age is {age}</p>
-        <p>I live in {live}</p>
-        <p>I am learning React.</p>
-      </div>
-
-      <div>
-        <p>First Number: {first}</p>
-        <p>Second Number: {sec}</p>
-        <p>Total: {first + sec}</p>
-      </div>
+      <h3>My Name is {name}</h3>
+      <p>My age is {age}</p>
+      <p>I live in {live}</p>
     </>
-  );
+  )
 }
 
-export default App;
+const Footer = () => {
+  return (
+    <p>______keep Learning React !______</p>
+  )
+}
+
+
+const App = () => {
+
+  return (
+    <>
+      <Header />
+      <Profile />
+      <Footer />
+
+    </>
+  )
+}
+
+export default App
