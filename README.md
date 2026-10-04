@@ -1,16 +1,44 @@
-# React + Vite
+# React Learning Journey 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My daily journey of learning React from basics to advanced concepts.
 
-Currently, two official plugins are available:
+## Day 01 — React Basics
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Topics Learned
 
-## React Compiler
+* What is React
+* React components
+* JSX
+* JavaScript expressions in JSX
+* Using variables in JSX
+* Creating functional components
+* Rendering multiple components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Practice
 
-## Expanding the ESLint configuration
+* Created my first React application using Vite
+* Practiced JSX syntax
+* Used JavaScript variables inside JSX
+* Used JavaScript expressions inside JSX
+* Created reusable components
+* Created `Header`, `Profile`, and `Footer` components
+* Rendered multiple components inside `App`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Tech Used
+
+* React
+* JavaScript
+* Vite
+* ESLint
+
+### Key Learning
+
+React allows us to build user interfaces using reusable components.
+
+JSX allows us to write HTML-like syntax inside JavaScript.
+
+JavaScript expressions can be used inside JSX with `{}`.
+
+### Day 01 Status
+
+✅ Completed
