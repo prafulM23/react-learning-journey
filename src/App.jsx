@@ -1,38 +1,12 @@
-const Header = () => {
-  return (
-    <h1>Welcome to React journey</h1>
-  )
-}
-
-const Profile = () => {
-  const name = "Praful"
-  const age = 23;
-  const live = "Indore";
-
-  return (
-    <>
-      <h3>My Name is {name}</h3>
-      <p>My age is {age}</p>
-      <p>I live in {live}</p>
-    </>
-  )
-}
-
-const Footer = () => {
-  return (
-    <p>______keep Learning React !______</p>
-  )
-}
+import LearnComponent from "./components/learn_component"
+import LearnJsx from "./components/learn_jsx"
 
 
 const App = () => {
-
   return (
     <>
-      <Header />
-      <Profile />
-      <Footer />
-
+      <LearnJsx />
+      <LearnComponent />
     </>
   )
 }
