@@ -9,6 +9,9 @@ const handleEvent2 = () => {
 const handleChange = (e) => {
     console.log(e.target.value)
 }
+const handleClick = (e) => {
+    console.log(e.target.innerText) // output = Click object
+}
 
 
 const LearnEvent = () => {
@@ -20,6 +23,9 @@ const LearnEvent = () => {
             <button onClick={handleEvent2}>Click !</button>
             <h4>Onchange !</h4>
             <input type="text" placeholder="Enter Something" onChange={handleChange} />
+            <h4>Event Object !</h4>
+            <button onClick={handleClick}>Click object !</button>
+
         </>
     )
 }
