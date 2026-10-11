@@ -108,3 +108,35 @@ The Event Object provides information about the element and action that triggere
 ### Day 03 Status
 
 ✅ Completed
+
+## Day 04 — React useState
+
+### Topics Learned
+
+- Introduction to `useState`
+- Initial State
+- Updating State
+- Re-rendering the UI when state changes
+- Boolean State
+- Conditional Rendering
+- Ternary Operator
+
+### Practice
+
+- Created a Counter App
+- Implemented Increase, Decrease
+- Created a Show/Hide Text toggle button
+- Updated state using `setCount` and `setIsVisible`
+- Changed button text based on state
+
+### Key Learning
+
+`useState` is a React Hook used to manage state in functional components.
+
+When state changes, React re-renders the component and updates the UI.
+
+Conditional rendering allows us to display content based on a condition.
+
+### Day 04 Status
+
+✅ Completed
