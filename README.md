@@ -140,3 +140,30 @@ Conditional rendering allows us to display content based on a condition.
 ### Day 04 Status
 
 ✅ Completed
+
+## Day 5: React Forms & Controlled Inputs
+
+### Topics Covered
+- Practiced controlled inputs using `useState`.
+- Used `value` and `onChange` to manage input fields.
+- Displayed input data on button click.
+- Handled form submission using `onSubmit`.
+- Used `event.preventDefault()` to prevent page reload.
+- Practiced form validation using `required`.
+- Used `type="email"` for email validation.
+- Managed multiple form fields using object state.
+- Updated object state using the spread operator (`...formData`).
+- Created a Clear button to reset input fields and displayed data.
+- Practiced storing submitted form data in an array.
+
+### Practice Project
+Created a form with Name and Email inputs, a Show button to display submitted data, and a Clear button to reset the form.
+
+### Key Learnings
+- How controlled inputs work in React.
+- How to manage multiple input fields.
+- How to handle form submission and validation.
+- How to update object state without losing existing properties.
+- How to reset form fields and displayed data.
+
+**Status:** Day 5 Completed ✅
