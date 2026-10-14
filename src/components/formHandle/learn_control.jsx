@@ -9,6 +9,10 @@ const LearnControlForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setFormData({
+            name: "",
+            email: "",
+        })
         setValue([formData.name, formData.email])
 
     }
@@ -25,7 +29,7 @@ const LearnControlForm = () => {
                 <p>Your email is {value[1]}</p>
 
                 <button type="submit">Show</button>
-                <button type="button" onClick={() => { setFormData({ name: "", email: "" }); setValue([]); }}>Clear</button>
+                <button type="button" onClick={() => { setValue([]); }}>Clear</button>
             </form>
 
         </>
