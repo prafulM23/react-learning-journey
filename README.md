@@ -167,3 +167,24 @@ Created a form with Name and Email inputs, a Show button to display submitted da
 - How to reset form fields and displayed data.
 
 **Status:** Day 5 Completed ✅
+
+## Day 6: Conditional Rendering
+
+### Topics Covered
+- Conditional rendering using `if/else`
+- Ternary operator (`? :`)
+- Logical AND operator (`&&`)
+- Login/Logout toggle using `useState`
+- Role-based conditional rendering using nested ternary
+- Showing content based on conditions
+- Age-based voting eligibility condition
+
+### Practice
+- Displayed different messages based on login status.
+- Showed the Dashboard only when logged in.
+- Displayed different messages for Admin and User roles.
+- Rendered content based on count and age conditions.
+
+### Key Learning
+Conditional rendering allows us to display different UI elements based on conditions and application state.
+**Status:** Day 6 Completed ✅
