@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const LearnList = () => {
+    const [search, setSearch] = useState("")
+    const [data, setData] = useState("")
     const std = [
         { id: 1, product: "Iphone 15", price: 100000 },
         { id: 2, product: "LCD", price: 15000 },
@@ -8,10 +12,19 @@ const LearnList = () => {
         { id: 6, product: "AC", price: 40000 }
     ];
 
+    const handleFind = () => {
+        setData(search.trim())
+    }
+    const filteredData = std.filter((item, id) =>
+        item.product.toLocaleLowerCase().includes(data.toLocaleLowerCase())
+    )
+    
     return (
         <>
             <h1>Learn List</h1>
 
+            <input type="text" placeholder="Find Item" value={search} onChange={(e) => setSearch(e.target.value)} />
+            <button onClick={handleFind}>Find</button>
             <table border={1}>
                 <thead>
                     <tr>
@@ -22,16 +35,23 @@ const LearnList = () => {
                 </thead>
 
                 <tbody>
-                    {std.filter((item, i) => item.price >= 10000).map((item, i) => (
-
-                        <tr key={item.id}>
-                            <td>{item.id}</td>
-                            <td>{item.product}</td>
-                            <td>{item.price}</td>
+                    {filteredData.length > 0 ? (
+                        filteredData.map((item, i) => (
+                            <tr key={item.id}>
+                                <td>{item.id}</td>
+                                <td>{item.product}</td>
+                                <td>{item.price}</td>
+                            </tr>
+                        ))
+                    ) :
+                        <tr>
+                            <td colSpan={3}>Product not found</td>
                         </tr>
-                    ))}
+                    }
                 </tbody>
             </table>
+
+
         </>
     );
 };
