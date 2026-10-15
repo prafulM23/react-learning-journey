@@ -188,3 +188,31 @@ Created a form with Name and Email inputs, a Show button to display submitted da
 ### Key Learning
 Conditional rendering allows us to display different UI elements based on conditions and application state.
 **Status:** Day 6 Completed ✅
+
+## Day 7: Lists, map(), filter() & Product Search
+
+### Topics Covered
+- Rendering lists using `map()`
+- Rendering arrays of objects
+- Using the `key` prop with unique IDs
+- Displaying product data in an HTML table
+- Filtering products based on price using `filter()`
+- Creating a product search using `useState`
+- Handling input with `value` and `onChange`
+- Searching products using `includes()`
+- Case-insensitive search using `toLowerCase()`
+- Showing a "Product not found" message when there are no matches
+
+### Practice Project: Product List & Search
+- Created a product list with ID, name, and price.
+- Filtered products based on their price.
+- Added a search input and Find button.
+- Displayed matching products in a table.
+- Used unique product IDs as React keys.
+
+### Key Learning
+- `map()` transforms array items into JSX elements.
+- `filter()` creates a new array containing items that match a condition.
+- `useState` stores and updates component state.
+- `includes()` checks whether text contains a search term.
+- `key` helps React identify list elements.
