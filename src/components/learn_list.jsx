@@ -3,7 +3,9 @@ const LearnList = () => {
         { id: 1, product: "Iphone 15", price: 100000 },
         { id: 2, product: "LCD", price: 15000 },
         { id: 3, product: "Laptop", price: 60000 },
-        { id: 4, product: "Watch", price: 1000 }
+        { id: 4, product: "Watch", price: 1000 },
+        { id: 5, product: "TV", price: 8000 },
+        { id: 6, product: "AC", price: 40000 }
     ];
 
     return (
@@ -20,7 +22,7 @@ const LearnList = () => {
                 </thead>
 
                 <tbody>
-                    {std.map((item, i) => (
+                    {std.filter((item, i) => item.price >= 10000).map((item, i) => (
 
                         <tr key={item.id}>
                             <td>{item.id}</td>
