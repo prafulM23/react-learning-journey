@@ -216,3 +216,47 @@ Conditional rendering allows us to display different UI elements based on condit
 - `useState` stores and updates component state.
 - `includes()` checks whether text contains a search term.
 - `key` helps React identify list elements.
+
+## Day 8: React useEffect Hook
+
+### Topics Covered
+- Introduction to the `useEffect` hook
+- Using `useEffect` with `useState`
+- Dependency array: `[]` and `[value]`
+- Running effects when state changes
+- Understanding the cleanup function
+- Updating the browser tab title using `document.title`
+- Using `setInterval()` inside `useEffect`
+- Cleaning up timers using `clearInterval()`
+- Understanding effect setup and cleanup
+- Managing timer state with Start, Stop, and Reset buttons
+
+### Practice Projects
+
+**1. State Change Effect**
+- Created a counter using `useState`.
+- Used `useEffect` to detect changes in state.
+- Logged messages when the effect ran.
+
+**2. Browser Tab Title**
+- Updated the browser tab title whenever the counter changed.
+- Used `document.title` inside `useEffect`.
+
+**3. Timer with Cleanup**
+- Created a timer using `setInterval()`.
+- Used a functional state updater to increment seconds.
+- Cleaned up the interval using `clearInterval()`.
+
+**4. Start, Stop, and Reset Timer**
+- Added Start, Stop, and Reset buttons.
+- Used `isRunning` state to control the timer.
+- Used the dependency array to manage timer setup and cleanup.
+- Disabled buttons when the corresponding action was unavailable.
+
+### Key Learnings
+- `useEffect` handles side effects in React components.
+- An empty dependency array runs the effect on mount, with cleanup on unmount.
+- A dependency array such as `[count]` reruns the effect when `count` changes.
+- Cleanup prevents unnecessary timers and resource leaks.
+- The functional state updater helps update state using its previous value.
+- React Strict Mode may run an extra setup and cleanup cycle in development.
