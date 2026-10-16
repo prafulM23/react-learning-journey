@@ -6,6 +6,7 @@ import LearnList from "./components/learn_list"
 import LearnProps from "./components/learn_props"
 import LearnConditionalRendering from "./components/learn_rendering"
 import Learnstate from "./components/learn_state"
+import LearnEffect from "./components/learn_useEffect"
 
 
 const App = () => {
@@ -18,7 +19,8 @@ const App = () => {
       <Learnstate /> */}
       {/* <LearnControlForm /> */}
       {/* <LearnConditionalRendering /> */}
-      <LearnList />
+      {/* <LearnList /> */}
+      <LearnEffect />
     </>
   )
 }
