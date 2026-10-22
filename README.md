@@ -260,3 +260,35 @@ Conditional rendering allows us to display different UI elements based on condit
 - Cleanup prevents unnecessary timers and resource leaks.
 - The functional state updater helps update state using its previous value.
 - React Strict Mode may run an extra setup and cleanup cycle in development.
+
+## Day 9: API Fetching in React
+
+### Topics Covered
+- Fetching data from an API using `fetch()`
+- Using `useEffect` for API requests
+- Storing API data using `useState`
+- Displaying API data using `map()`
+- Handling loading states
+- Handling errors using `.catch()`
+- Checking HTTP responses using `response.ok`
+- Using `.finally()` to stop loading
+- Searching API data using `filter()`
+- Case-insensitive search using `toLowerCase()` and `includes()`
+
+### Practice Project: API Users List
+- Fetched users from JSONPlaceholder API.
+- Displayed user names on the screen.
+- Added a loading message while fetching data.
+- Displayed an error message if the request failed.
+- Added a search input to find users by name.
+- Displayed "No users found" when no matching user exists.
+
+### Key Learnings
+- `fetch()` sends a request to an API.
+- `response.json()` converts the response into JavaScript data.
+- `useState` stores API data and UI state.
+- `useEffect` runs the API request when the component mounts.
+- `map()` renders the users list.
+- `filter()` finds matching users without modifying the original array.
+- `catch()` handles request errors.
+- `finally()` runs after the request succeeds or fails.
