@@ -1,4 +1,5 @@
 import LearnControlForm from "./components/formHandle/learn_control"
+import LearnAPI from "./components/learn_api"
 import LearnComponent from "./components/learn_component"
 import LearnEvent from "./components/learn_event"
 import LearnJsx from "./components/learn_jsx"
@@ -20,7 +21,8 @@ const App = () => {
       {/* <LearnControlForm /> */}
       {/* <LearnConditionalRendering /> */}
       {/* <LearnList /> */}
-      <LearnEffect />
+      {/* <LearnEffect /> */}
+      <LearnAPI />
     </>
   )
 }
