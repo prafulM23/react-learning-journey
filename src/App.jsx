@@ -8,6 +8,7 @@ import LearnProps from "./components/learn_props"
 import LearnConditionalRendering from "./components/learn_rendering"
 import Learnstate from "./components/learn_state"
 import LearnEffect from "./components/learn_useEffect"
+import LearnPropDrill from "./components/propdrilling/learndrill"
 
 
 const App = () => {
@@ -22,7 +23,8 @@ const App = () => {
       {/* <LearnConditionalRendering /> */}
       {/* <LearnList /> */}
       {/* <LearnEffect /> */}
-      <LearnAPI />
+      {/* <LearnAPI /> */}
+      <LearnPropDrill name="Praful" />
     </>
   )
 }
